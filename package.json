@@ -1,0 +1,14 @@
+{
+  "name": "gotugo-format",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hashrock/gotugo-format.git",
+  "author": "hashrock <hashrock@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
