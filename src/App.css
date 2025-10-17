@@ -1,0 +1,82 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h1 + p {
+  text-align: center;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.editor-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.editor-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+textarea[readonly] {
+  background-color: #2a2a2a;
+  cursor: default;
+}
+
+.examples {
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.examples h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.examples ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.examples li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    grid-template-columns: 1fr;
+  }
+}
