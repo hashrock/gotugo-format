@@ -14,7 +14,7 @@ export function parseLine(str: string): Date | undefined {
   }
   
   // Pattern: 11/17 or 11／17
-  m = /(\d+)[／\/](\d+)/.exec(str);
+  m = /(\d+)[／/](\d+)/.exec(str);
   if (m) {
     return new Date(new Date().getFullYear(), +m[1] - 1, +m[2]);
   }
